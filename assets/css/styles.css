@@ -26,6 +26,7 @@ body {
 h1, h2, h3 {
     line-height: 1.2;
     text-wrap: balance;
+    color: var(--clr-primary);
 }
 
 p, span, li {
@@ -49,8 +50,7 @@ a {
 }
 
 a:hover {
-    scale: 1 1.2;
-    color: var(--clr-primary);
+    color: var(--clr-accent);
 }
 
 button {
@@ -67,6 +67,11 @@ button {
     .flow > * + * {
         display: block;
         margin-top: var(--flow);
+    }
+
+    .flow-xl > * + * {
+        display: block;
+        margin-top: calc(var(--flow) * 10);
     }
 
     .flow-lg > * + * {
@@ -167,6 +172,10 @@ section {
     align-items: center;
 }
 
+.nav-link {
+    font-size: 1.2rem;
+}
+
 #button-menu, #close-menu {
     display: none;
 }
@@ -223,14 +232,14 @@ section {
     gap: 5rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1.25fr .75fr;
 }
 /****************************** CONTACT *******************************/
 
 
 /****************************** FOOTER *******************************/
 .footer .container {
-    gap: 5rem;
+    gap: 2rem 4rem;
     display: grid;
     grid-column: 2 / 3;
     grid-template-columns: repeat(5, 1fr);
@@ -241,7 +250,11 @@ section {
     grid-column: 1 / -1;
     grid-template-columns: subgrid;
     
-    padding-block: 5rem;
+    padding-block: 5rem 2rem;
     background-color: var(--clr-secondary);
+}
+
+.footer p {
+    grid-column: 1 / -1;
 }
 /****************************** FOOTER *******************************/

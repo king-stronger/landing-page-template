@@ -226,3 +226,22 @@ section {
     grid-template-columns: 2fr 1fr 1fr;
 }
 /****************************** CONTACT *******************************/
+
+
+/****************************** FOOTER *******************************/
+.footer .container {
+    gap: 5rem;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#footer {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    
+    padding-block: 5rem;
+    background-color: var(--clr-secondary);
+}
+/****************************** FOOTER *******************************/

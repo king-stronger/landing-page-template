@@ -1,5 +1,11 @@
 :root {
     --flow: 1rem;
+
+    --clr-text: #050315;
+    --clr-background: #fbfbfe;
+    --clr-primary: #2f27ce;
+    --clr-secondary: #dedcff;
+    --clr-accent: #433bff;
 }
 
 /****************************** RESET CSS *******************************/
@@ -109,7 +115,8 @@ button {
     /****************************** UTILITIES *******************************/
     .button {
         padding: .5rem 1rem;
-        border-radius: 1rem;
+        border-radius: 5rem;
+        color: var(--clr-background);
         background: var(--clr-primary);
     }
 
@@ -137,3 +144,26 @@ button {
     grid-column: 2 / 3;
 }
 /****************************** APP *******************************/
+
+
+/****************************** HEADER *******************************/
+.header {
+    padding-block: 1rem;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+#button-menu, #close-menu {
+    display: none;
+}
+/****************************** HEADER *******************************/

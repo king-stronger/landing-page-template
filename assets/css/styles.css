@@ -185,15 +185,18 @@ section {
 
 /****************************** SERVICES *******************************/
 .services-content {
-    gap: 5rem;
+    gap: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .services-card {
     display: flex;
+    padding: 2rem;
+    border-radius: 1rem;
     align-items: center;
     flex-direction: column;
+    border: 1px solid #ccc;
     justify-content: space-between;
 }
 /****************************** SERVICES *******************************/

@@ -216,3 +216,13 @@ section {
     column-gap: 2rem;
 }
 /****************************** APP STORE *******************************/
+
+
+/****************************** CONTACT *******************************/
+.contact-grid {
+    gap: 5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+/****************************** CONTACT *******************************/

@@ -258,3 +258,43 @@ section {
     grid-column: 1 / -1;
 }
 /****************************** FOOTER *******************************/
+
+/****************************** MEDIA *******************************/
+@media (width < 750px){
+    .home-article,
+    .services-content,
+    .app-store-section {
+        place-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .home-article :is(h2, h3, p, span, button),
+    .services-content :is(h2, h3, p, span),
+    .app-store-section :is(h2, h3, p, span) {
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .app-store-section :has(> button){
+       justify-content: center;
+    }
+
+    .contact-grid {
+        gap: 3rem;
+        place-items: center;
+        grid-template-columns: 1.25fr .75fr;
+    }
+
+    .contact-content {
+        text-align: center;
+        grid-column: 1 / -1;
+    }
+
+    .footer .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer .container .home{
+        grid-column: span 2;
+    }
+}

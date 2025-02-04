@@ -156,12 +156,21 @@ section {
 
 
 /****************************** HEADER *******************************/
-.header {
+#header {
+    top: 0;
+    z-index: 1000;
+    position: sticky;
     padding-block: 1rem;
+    background: white;
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: subgrid;
+    box-shadow: 0 0 1px lightgray;
 }
 
 .header .container {
     display: flex;
+    grid-column: 2 / 3;
     align-items: center;
     justify-content: space-between;
 }
@@ -271,6 +280,10 @@ section {
     align-items: center;
     grid-template-columns: 2fr 1.25fr .75fr;
 }
+
+.contact-infos span:has(+ span){
+    font-weight: bold;
+}
 /****************************** CONTACT *******************************/
 
 
@@ -303,6 +316,11 @@ section {
     .app-store-section {
         place-items: center;
         grid-template-columns: 1fr;
+    }
+
+    .about-img,
+    .app-store-img-container {
+        order: 2;
     }
 
     .home-article :is(h2, h3, p, span, button),

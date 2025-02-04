@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="app">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <h1 class="text-lg">ProTask</h1>
     
@@ -44,7 +44,7 @@
         </header>
 
         <section class="home-section flow-xl" id="home">
-            <article class="home-article" data-aos="slide-right">
+            <article class="home-article" data-aos="fade-up">
                 <div class="home-content flow-lg">
                     <h2 class="article-title text-xl">Simplifiez votre gestion de projets</h2>
                     <p>
@@ -57,7 +57,7 @@
                 </div>
             </article>
 
-            <article class="home-article" data-aos="slide-left">
+            <article class="home-article" data-aos="fade-up">
                 <div class="about-img">
                     <img src="assets/img/service2.jpg" alt="Vue de l’équipe collaborant sur un projet dans ProTask">
                 </div>
@@ -70,7 +70,7 @@
                 </div>
             </article>
 
-            <article class="home-article" data-aos="slide-right">
+            <article class="home-article" data-aos="fade-up">
                 <div class="about-description flow-lg">
                     <h2 class="article-title text-xl">Un outil flexible pour toutes les équipes</h2>
                     <p>
@@ -84,10 +84,10 @@
             </article>
         </section>
 
-        <section class="services-section flow-lg" data-aos="fade-in" id="services">
+        <section class="services-section flow-lg" id="services">
             <h2 class="text-xl text-center service-title">Nos services</h2>
             <div class="services-content">
-                <div class="services-card">
+                <div class="services-card" data-aos="flip-up">
                     <h3 class="text-center text-md">Tableaux de Tâches</h3>
                     <img src="assets/img/service3.jpg" alt="Tableau de gestion de projet ProTask">
                     <p class="text-center">
@@ -96,7 +96,7 @@
                     <a href="service-link">En savoir plus</a>
                 </div>
                 
-                <div class="services-card">
+                <div class="services-card" data-aos="flip-down">
                     <h3 class="text-center text-md">Suivi des Progrès</h3>
                     <img src="assets/img/service3.jpg" alt="Graphiques de suivi de la progression du projet dans ProTask">
                     <p class="text-center">
@@ -105,7 +105,7 @@
                     <a href="service-link">En savoir plus</a>
                 </div>
 
-                <div class="services-card">
+                <div class="services-card" data-aos="flip-up">
                     <h3 class="text-center text-md">Collaboration en Temps Réel</h3>
                     <img src="assets/img/service3.jpg" alt="Équipe en train de collaborer dans ProTask">
                     <p class="text-center">
@@ -116,8 +116,8 @@
             </div>
         </section>
 
-        <section class="app-store-section" data-aos="zoom-out" id="download">
-            <div>
+        <section class="app-store-section" data-aos="fade-up" id="download">
+            <div class="app-store-img-container">
                 <img src="assets/img/service2.jpg" alt="Personne utilisant l’application ProTask sur un téléphone mobile">
             </div>
 
@@ -139,7 +139,7 @@
             </div>
         </section>
 
-        <section class="contact-section flow-lg" data-aos="fade-in" id="contact">
+        <section class="contact-section flow-lg" data-aos="zoom-in-up" id="contact">
             <h2 class="text-xl text-center">Contactez-nous</h2>
             <div class="contact-grid">
                 <div class="contact-content">
@@ -169,7 +169,7 @@
             </div>
         </section>
 
-        <footer class="footer" id="footer" data-aos="zoom-out">
+        <footer class="footer" id="footer" data-aos="fade-down">
             <div class="container">
                 <div class="home flow">
                     <h3 class="text">ProTask</h3>
@@ -220,7 +220,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1500,
+            duration: 1250,
             once: true
         });
 

@@ -254,6 +254,12 @@ section {
 .app-store-section :has(> button){
     display: flex;
     column-gap: 2rem;
+    align-items: center;
+}
+
+.app-store-section :is(button){
+    display: flex;
+    align-items: center;
 }
 /****************************** APP STORE *******************************/
 
@@ -313,7 +319,7 @@ section {
     .contact-grid {
         gap: 3rem;
         place-items: center;
-        grid-template-columns: 1.25fr .75fr;
+        grid-template-columns: 1fr;
     }
 
     .contact-content {
@@ -322,7 +328,7 @@ section {
     }
 
     .footer .container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer .container .home{

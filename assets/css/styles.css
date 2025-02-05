@@ -152,6 +152,10 @@ button {
 section {
     margin-block: 10rem;
 }
+
+section:nth-of-type(1) {
+    margin-top: 5rem;
+}
 /****************************** APP *******************************/
 
 

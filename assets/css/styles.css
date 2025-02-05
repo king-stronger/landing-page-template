@@ -88,15 +88,15 @@ button {
 
     /****************************** TYPOGRAPHY *******************************/
     .text-xl {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
     .text-lg {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .text-md {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .text {

@@ -3,6 +3,7 @@
 :root {
     --flow: 1rem;
 
+    /**** Typography variables ****/
     --fs-100: clamp(0.6331rem, 0.7158rem + -0.1066vw, 0.6944rem);
     --fs-200: clamp(0.8333rem, 0.8296rem + 0.0185vw, 0.844rem);
     --fs-300: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
@@ -268,6 +269,10 @@ section:nth-of-type(1) {
     flex-direction: column;
     border: 1px solid #ccc;
     justify-content: space-between;
+}
+
+.service-link {
+    font-weight: bold;
 }
 /****************************** SERVICES *******************************/
 

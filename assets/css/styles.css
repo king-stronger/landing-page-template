@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 :root {
     --flow: 1rem;
 
@@ -14,6 +12,8 @@
     --fs-800: clamp(2.4883rem, 1.7069rem + 3.907vw, 4.7348rem);
 
     
+    --clr-dark: black;
+    --clr-light: white;
     --clr-text: #2f2d2eff;
     --clr-title: #d72483ff;
     --clr-accent: #2f27ceff;
@@ -149,7 +149,7 @@ button {
     }
     
     .button, .button > * {
-        color: var(--clr-text);
+        color: var(--clr-light);
         background: var(--clr-primary);
     }
 
